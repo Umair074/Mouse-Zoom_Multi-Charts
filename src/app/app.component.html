@@ -1,0 +1,35 @@
+<div class="boxChart__container" (mousemove)="addHighlight($event)" (touchmove)="addHighlight($event)"
+  (touchstart)="addHighlight($event)">
+
+  <p>1. Basic line</p>
+  <highcharts-chart [Highcharts]="Base_line" [options]="Base_line_option"
+    style="width: 100%; height: 400px; display: block;">
+  </highcharts-chart>
+  <br>
+
+  <p>2. Basic line</p>
+  <highcharts-chart [Highcharts]="Base_line2" [options]="Base_line_option2"
+    style="width: 100%; height: 400px; display: block;">
+  </highcharts-chart>
+  <br>
+
+  <p>2. with Annotation</p>
+  <highcharts-chart [Highcharts]="withannotation" [options]="withannotation_option"
+    style="width: 100%; height: 400px; display: block;">
+  </highcharts-chart>
+  <br>
+
+  <p>5. Stock</p>
+  <highcharts-chart [Highcharts]="Stock1" [options]="Stock1_option"
+      style="width: 100%; height: 400px; display: block;">
+   </highcharts-chart> 
+  <br>
+
+  <p>6. Stock</p>
+  <highcharts-chart [Highcharts]="Stock2" [options]="Stock1_option2"
+      style="width: 100%; height: 400px; display: block;">
+   </highcharts-chart> 
+  <br>
+
+
+</div>
